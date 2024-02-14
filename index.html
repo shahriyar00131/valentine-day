@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Valentine Day</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="images/icon.png">
+</head>
+<body>
+  <div class="container">
+    <img class="image" src="images/image-1.png" alt="Image" id="image">
+    <button class="button" id="button">Click Me</button>
+    <p class="text" id="text">تو که سینگلی چرا دانلود کردی؟</p>
+  </div>
+
+  <script>
+    document.getElementById("button").addEventListener("click", function() {
+      var image = document.getElementById("image");
+      image.src = "images/image-2.png";
+
+      var text = document.getElementById("text");
+      text.style.display = "block";
+    });
+  </script>
+</body>
+</html>

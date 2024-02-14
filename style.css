@@ -1,0 +1,50 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: center;
+    }
+
+    .image {
+      width: 400px;
+      height: 400px;
+    }
+
+    .button {
+      margin-top: 20px;
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #990000;
+    }
+
+    .text {
+      display: none;
+      animation: fade-in 1.5s ease;
+	  font-size: 25px;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
